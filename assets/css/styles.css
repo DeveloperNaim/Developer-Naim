@@ -120,6 +120,20 @@ img{
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
+/* Custom Scroll Bar Design */
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+::-webkit-scrollbar-thumb{
+ background: #13131a;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #4070F4;
+}
+
 /*===== NAV =====*/
 .nav{
   height: var(--header-height);
@@ -162,6 +176,19 @@ img{
 .nav__logo{
   color: var(--second-color);
 }
+.nav__logo span{
+  color: #4070F4;
+}
+
+.nav__logo h4::first-letter{
+  font-size: 1.3rem;
+}
+.nav__logo h4:hover{
+  color: #4070F4;
+  transform: rotateX(360deg);
+  transition-duration: 1.5s;
+}
+
 .nav__toggle{
   color: var(--second-color);
   font-size: 1.5rem;
@@ -352,6 +379,9 @@ img{
 .footer__title{
   font-size: 2rem;
   margin-bottom: var(--mb-4);
+}
+.footer__title span{
+  color: #4070F4;
 }
 .footer__social{
   margin-bottom: var(--mb-4);

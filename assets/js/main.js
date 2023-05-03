@@ -33,6 +33,16 @@ const sr = ScrollReveal({
     reset: true
 });
 
+// Typing Script JS
+
+import Typed from './src/typed.js';
+var typed = new Typed('.typing', {
+  strings: ['Web Designer', 'Web Developer', 'Youtuber', 'Blogger'],
+  typeSpeed: 80,
+  backSpeed: 80,
+  loop: true,
+});
+
 /*SCROLL HOME*/
 sr.reveal('.home__title',{}); 
 sr.reveal('.button',{delay: 200}); 
